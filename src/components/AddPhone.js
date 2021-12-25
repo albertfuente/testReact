@@ -20,7 +20,7 @@ const AddPhone = ({ onAdd }) => {
       return
     }
 
-    onAdd({ name, manufacturer, description, color, price, imageFileName,screen,  processor, ram   })
+    onAdd({ name, manufacturer, description, color, price, imageFileName, screen, processor, ram })
 
     setName('')
     setManufacturer('')
@@ -53,8 +53,6 @@ const AddPhone = ({ onAdd }) => {
           onChange={(e) => setManufacturer(e.target.value)}
         />
       </div>
-
-
       <div className='form-control'>
         <label>Description</label>
         <input
@@ -82,8 +80,33 @@ const AddPhone = ({ onAdd }) => {
           onChange={(e) => setPrice(e.target.value)}
         />
       </div>
-
-
+      <div className='form-control'>
+        <label>Screen</label>
+        <input
+          type='text'
+          placeholder='Add Screen'
+          value={screen}
+          onChange={(e) => setScreen(e.target.value)}
+        />
+      </div>
+      <div className='form-control'>
+        <label>Processor</label>
+        <input
+          type='text'
+          placeholder='Add Processor'
+          value={processor}
+          onChange={(e) => setProcessor(e.target.value)}
+        />
+      </div>
+      <div className='form-control'>
+        <label>Ram</label>
+        <input
+          type='text'
+          placeholder='Add ram'
+          value={ram}
+          onChange={(e) => setRam(e.target.value)}
+        />
+      </div>
       <input type='submit' value='Save Phone' className='btn btn-block' />
     </form>
   )

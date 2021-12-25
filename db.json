@@ -23,6 +23,18 @@
       "screen": "4,7 inch IPS",
       "processor": "A10 Fusion",
       "ram": 4
+    },
+    {
+      "name": "name",
+      "manufacturer": "manufacturer",
+      "description": "description",
+      "color": "color",
+      "price": "prices",
+      "imageFileName": "",
+      "screen": "screen",
+      "processor": "processor",
+      "ram": "ram",
+      "id": 3
     }
   ]
 }

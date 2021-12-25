@@ -64,7 +64,6 @@ const App = () => {
   }
 
 
-
   return (
     <Router>
       <div className='container'>
@@ -79,7 +78,7 @@ const App = () => {
               <>
                 {showAddPhone && <AddPhone onAdd={addPhone} />}
                 {loader && (<div class="lds-dual-ring"></div>)}
-                {phones.length > 0  ? (
+                {phones.length > 0 ? (
                   <Phones
                     phones={phones}
                     onDelete={deletePhone}
