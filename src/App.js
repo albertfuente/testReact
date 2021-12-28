@@ -29,14 +29,6 @@ const App = () => {
     return data
   }
 
-  // Fetch Phone
-  const fetchPhone = async (id) => {
-    const res = await fetch(`http://localhost:5000/phones/${id}`)
-    const data = await res.json()
-
-    return data
-  }
-
   // Add Phone
   const addPhone = async (phone) => {
     const res = await fetch('http://localhost:5000/phones', {
